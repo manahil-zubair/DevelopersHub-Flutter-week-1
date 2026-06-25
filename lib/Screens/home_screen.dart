@@ -6,44 +6,64 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFFFFDE7),
       appBar: AppBar(
-        title: const Text("Home Screen"),
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        automaticallyImplyLeading: false,
+        title: const Text('Home'),
+        backgroundColor: const Color(0xFFFFEE58),
+        foregroundColor: Colors.black87,
+        elevation: 1,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
+            // Success icon
             const Icon(
               Icons.check_circle_outline,
               size: 80,
-              color: Colors.green,
+              color: Color(0xFFD4A017),
             ),
-            const SizedBox(height: 15),
-            const Text(
-              "Welcome to the App!",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            const Text(
-              "You have successfully Logged In.",
-              style: TextStyle(color: Colors.grey),
-            ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 16),
 
-            ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.redAccent,
-                foregroundColor: Colors.white,
+            // Success message
+            const Text(
+              'Login Successful!',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
               ),
+            ),
+            const SizedBox(height: 8),
+
+            const Text(
+              'Welcome to the Home Screen',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.black54,
+              ),
+            ),
+            const SizedBox(height: 40),
+
+            // Logout button
+            ElevatedButton.icon(
               onPressed: () {
                 Navigator.pop(context);
               },
               icon: const Icon(Icons.logout),
-              label: const Text("Logout"),
+              label: const Text('Logout'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFFFD54F),
+                foregroundColor: Colors.black87,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 12,
+                ),
+                elevation: 2,
+              ),
             ),
+
           ],
         ),
       ),
