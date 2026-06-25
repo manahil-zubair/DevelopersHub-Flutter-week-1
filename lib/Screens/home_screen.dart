@@ -6,10 +6,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFFDE7),
+      backgroundColor: const Color(0xFFF1F8F5),
       appBar: AppBar(
         title: const Text('Home'),
-        backgroundColor: const Color(0xFFFFEE58),
+        backgroundColor: const Color(0xFFB2DFDB),
         foregroundColor: Colors.black87,
         elevation: 1,
       ),
@@ -18,15 +18,13 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
 
-            // Success icon
             const Icon(
               Icons.check_circle_outline,
               size: 80,
-              color: Color(0xFFD4A017),
+              color: Color(0xFF4CAF7D),
             ),
             const SizedBox(height: 16),
 
-            // Success message
             const Text(
               'Login Successful!',
               style: TextStyle(
@@ -54,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               icon: const Icon(Icons.logout),
               label: const Text('Logout'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFFFFD54F),
+                backgroundColor: const Color(0xFFA5D6A7),
                 foregroundColor: Colors.black87,
                 padding: const EdgeInsets.symmetric(
                   horizontal: 24,

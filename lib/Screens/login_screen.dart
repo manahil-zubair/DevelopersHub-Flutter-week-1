@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFFDE7),
+      backgroundColor: const Color(0xFFF1F8F5),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24.0),
@@ -46,7 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Icon(
                   Icons.lock_outline,
                   size: 80,
-                  color: Color(0xFFD4A017),
+                  color: Color(0xFF4CAF7D),
                 ),
                 const SizedBox(height: 16),
 
@@ -78,12 +78,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Email',
                     hintText: 'Enter your email',
-                    prefixIcon: Icon(Icons.email_outlined, color: Color(0xFFD4A017)),
+                    prefixIcon: Icon(Icons.email_outlined, color: Color(0xFF4CAF7D)),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFFD4A017), width: 2),
+                      borderSide: BorderSide(color: Color(0xFF4CAF7D), width: 2),
                     ),
                     labelStyle: TextStyle(color: Colors.black54),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -104,12 +106,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Password',
                     hintText: 'Enter your password',
-                    prefixIcon: Icon(Icons.lock_outline, color: Color(0xFFD4A017)),
+                    prefixIcon: Icon(Icons.lock_outline, color: Color(0xFF4CAF7D)),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFFD4A017), width: 2),
+                      borderSide: BorderSide(color: Color(0xFF4CAF7D), width: 2),
                     ),
                     labelStyle: TextStyle(color: Colors.black54),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -126,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: TextButton(
                     onPressed: () {},
                     style: TextButton.styleFrom(
-                      foregroundColor: const Color(0xFFD4A017),
+                      foregroundColor: const Color(0xFF4CAF7D),
                     ),
                     child: const Text('Forgot Password?'),
                   ),
@@ -140,7 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: _login,
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16),
-                      backgroundColor: const Color(0xFFFFEE58),
+                      backgroundColor: const Color(0xFFB2DFDB),
                       foregroundColor: Colors.black87,
                       elevation: 2,
                     ),

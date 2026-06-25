@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Login App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFFF9C4)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFB2DFDB)),
         useMaterial3: true,
       ),
       home: const LoginScreen(),
